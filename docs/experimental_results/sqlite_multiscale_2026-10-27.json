@@ -1,0 +1,75 @@
+{
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "backend": "SQLite local",
+  "chunk_size": 5000,
+  "memory_note": "tracemalloc Python allocations only, excludes native SQLite/cache and OS RSS",
+  "measurement_note": "fresh databases; excludes CSV generation and includes SQLite creation",
+  "individual_runs": [
+    {
+      "rows": 1000,
+      "repeat": 0,
+      "ingest_s": 0.03558,
+      "rows_per_s": 28104,
+      "traced_python_peak_mib": 0.297
+    },
+    {
+      "rows": 1000,
+      "repeat": 1,
+      "ingest_s": 0.03028,
+      "rows_per_s": 33030,
+      "traced_python_peak_mib": 0.216
+    },
+    {
+      "rows": 10000,
+      "repeat": 0,
+      "ingest_s": 0.34213,
+      "rows_per_s": 29229,
+      "traced_python_peak_mib": 2.538
+    },
+    {
+      "rows": 10000,
+      "repeat": 1,
+      "ingest_s": 0.39298,
+      "rows_per_s": 25447,
+      "traced_python_peak_mib": 2.467
+    },
+    {
+      "rows": 30000,
+      "repeat": 0,
+      "ingest_s": 1.35393,
+      "rows_per_s": 22158,
+      "traced_python_peak_mib": 2.62
+    },
+    {
+      "rows": 30000,
+      "repeat": 1,
+      "ingest_s": 0.886,
+      "rows_per_s": 33860,
+      "traced_python_peak_mib": 2.624
+    }
+  ],
+  "summary": [
+    {
+      "rows": 1000,
+      "repeats": 2,
+      "median_ingest_s": 0.03293,
+      "median_rows_per_s": 30567,
+      "max_python_traced_peak_mib": 0.297
+    },
+    {
+      "rows": 10000,
+      "repeats": 2,
+      "median_ingest_s": 0.36755,
+      "median_rows_per_s": 27338,
+      "max_python_traced_peak_mib": 2.538
+    },
+    {
+      "rows": 30000,
+      "repeats": 2,
+      "median_ingest_s": 1.11997,
+      "median_rows_per_s": 28009,
+      "max_python_traced_peak_mib": 2.624
+    }
+  ]
+}

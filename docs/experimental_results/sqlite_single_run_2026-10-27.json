@@ -1,0 +1,39 @@
+{
+  "environment": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "python": "3.13.5",
+  "note": "Local fresh database, source data synthetic, output paths under temporary directory",
+  "report": {
+    "input_rows": 100000,
+    "new_rows": 100000,
+    "replayed_rows": 0,
+    "stored_unique_rows": 100000,
+    "totals_by_category": [
+      {
+        "category": "food",
+        "rows": 25076,
+        "amount_pence": 313621803
+      },
+      {
+        "category": "shopping",
+        "rows": 24963,
+        "amount_pence": 309914925
+      },
+      {
+        "category": "travel",
+        "rows": 25034,
+        "amount_pence": 313270040
+      },
+      {
+        "category": "utilities",
+        "rows": 24927,
+        "amount_pence": 310577055
+      }
+    ],
+    "generated_rows": 100000,
+    "generation_seconds": 0.5369,
+    "ingest_seconds": 1.0681,
+    "ingest_rows_per_second": 93623,
+    "chunk_size": 5000,
+    "data": "synthetic"
+  }
+}
